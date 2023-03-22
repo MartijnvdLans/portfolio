@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styleRoulette.css">
+</head>
+<body>
+    <img src="./images/0.png" class="roulette" id="tafel">
+    <img src="images/ball.png" id="ball">
+     <div class="choose_name">
+     Kies een gebruikersnaam<br>
+     <form id="gebruikersnaam">
+         <input class="gekozen_naam" type="text">
+     </form>
+  </div>
+  
+  <div class="choose_player">
+     Kies een profielfoto<br>
+      <img id="Pikachu" src="images/Pikachu.png">
+      <img id="Charmander" src="images/Charmander.png">
+      <img id="Bulbasaur" src="images/Bulbasaur.png">
+      <img id="Squirtle" src="images/Squirtle.png">
+  </div>
+  
+   <div class="playerarea">
+       <img class="playericon" src="images/Pikachu.png">
+       <h5 class="playername"></h5>
+   </div>
+    <h1>€500</h1>
+    <h2></h2>
+    <h4></h4>
+    <form id="form">
+       <h3></h3>
+        <input class="input" type="number" placeholder="Inzet">
+    </form>
+    <div class="hider"></div>
+    <p></p>
+    <button id="zero" class="zero" >0</button>
+    <button id="one" class="leftbox" style="margin-top: 33px;background:#E0080B ;">1</button>
+    <button id="four" class="leftbox" style="margin-top: 66px;background:#000">4</button>
+    <button id="seven" class="leftbox" style="margin-top: 99px;background:#E0080B">7</button>
+    <button id="ten" class="leftbox" style="margin-top: 132px;background:#000">10</button>
+    <button id="dertien" class="leftbox" style="margin-top: 165px;background:#000">13</button>
+    <button id="sixteen" class="leftbox" style="margin-top: 198px;background:#E0080B;background:#E0080B">16</button>
+    <button id="nineteen" class="leftbox" style="margin-top:231px;background:#E0080B">19</button>
+    <button id="twentytwo" class="leftbox" style="margin-top: 264px;background:#000">22</button>
+    <button id="twentyfive" class="leftbox" style="margin-top: 297px;background:#E0080B">25</button>
+    <button id="twentyeight" class="leftbox" style="margin-top: 330px;background:#000">28</button>
+    <button id="thirtyone" class="leftbox" style="margin-top: 363px;background:#000">31</button>
+    <button id="thirtyfour" class="leftbox" style="margin-top: 396px;background:#E0080B">34</button>
+    
+    
+    
+    <button id="two" class="middlebox" style="margin-top: 33px;background:#000 ;">2</button>
+    <button id="five" class="middlebox" style="margin-top: 66px;background:#E0080B">5</button>
+    <button id="eight" class="middlebox" style="margin-top: 99px;background:#000">8</button>
+    <button id="eleven" class="middlebox" style="margin-top: 132px;background:#000">11</button>
+    <button id="fourteen" class="middlebox" style="margin-top: 165px;background:#E0080B">14</button>
+    <button id="seventeen" class="middlebox" style="margin-top: 198px;background:#E0080B;background:#000">17</button>
+    <button id="twenty" class="middlebox" style="margin-top:231px;background:#000">20</button>
+    <button id="twentythree" class="middlebox" style="margin-top: 264px;background:#E0080B">23</button>
+    <button id="twentysix" class="middlebox" style="margin-top: 297px;background:#000">26</button>
+    <button id="twentynine" class="middlebox" style="margin-top: 330px;background:#000">29</button>
+    <button id="thirtytwo" class="middlebox" style="margin-top: 363px;background:#E0080B">32</button>
+    <button id="thirtyfive" class="middlebox" style="margin-top: 396px;background:#000">35</button>
+    
+    
+    
+    <button id="three" class="rightbox" style="margin-top: 33px;background:#E0080B ;">3</button>
+    <button id="six" class="rightbox" style="margin-top: 66px;background:#000">6</button>
+    <button id="nine" class="rightbox" style="margin-top: 99px;background:#E0080B">9</button>
+    <button id="twelve" class="rightbox" style="margin-top: 132px;background:#E0080B">12</button>
+    <button id="fifteen" class="rightbox" style="margin-top: 165px;background:#000">15</button>
+    <button id="eightteen" class="rightbox" style="margin-top: 198px;background:#E0080B;background:#E0080B">18</button>
+    <button id="twentyone" class="rightbox" style="margin-top:231px;background:#E0080B">21</button>
+    <button id="twentyfour" class="rightbox" style="margin-top: 264px;background:#000">24</button>
+    <button id="twentyseven" class="rightbox" style="margin-top: 297px;background:#E0080B">27</button>
+    <button id="thirty" class="rightbox" style="margin-top: 330px;background:#E0080B">30</button>
+    <button id="thirtythree" class="rightbox" style="margin-top: 363px;background:#000">33</button>
+    <button id="thirtysix" class="rightbox" style="margin-top: 396px;background:#E0080B">36</button>
+    
+    
+    <button id="firsttwelve" class="leftbox" style="margin-top: 429px">1st 12</button>
+    <button id="secondtwelve" class="middlebox" style="margin-top: 429px">2nd 12</button>
+    <button id="thirdtwelve" class="rightbox" style="margin-top: 429px">3rd 12</button>
+    
+    <button id="red" class="red">Red</button>
+    <button id="black" class="black">Black</button>
+    
+    <button id="pair">Pair</button>
+    <button id="impair">Impair</button>
+    
+    <button id="firsteightteen">1st 18</button>
+    <button id="lasteightteen">Last 18</button>
+
+    <div id="money"><h6 id="bankrupt">Je bent blut! Wil je nog meer geld inleggen?</h6><button id="eeneuro">250</button>
+    <button id="tweeeuro">500</button>
+    <button id="drieeuro">750</button></div>
+</body>
+<script src="./js/roulette.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./images/logo2.svg" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+<body>
+   <header>
+      <a href="./index.html">
+          <img src="./images/logo2.svg" alt="Logo Martijn">
+      </a>
+       <ul>
+           <a href="./index.html"><li>Home</li></a>
+           <a href="./portfolio.html"><li>Portfolio</li></a>
+           <a href="./cv.html"><li>CV</li></a>
+           <a href="./contact.html" class="active"><li>Contact</li></a>
+       </ul>
+   </header>
+   
+   <main>
+       <div class="form">
+           <form action="https://formspree.io/f/xpzejlbz" method="post">
+           <h3 data-aos="fade-down">Neem contact op!</h3>
+           <p data-aos="fade-down">Heb ik je met mijn portfolio kunnen overtuigen? Neem dan vooral contact op met mij!</p>
+           <label for=""><input type="text" name="Naam" class="name" placeholder="Naam" data-aos="fade-up" required></label>
+           <label for=""><input type="email" name="Email" class="email" placeholder="voorbeeld@hotmail.com" data-aos="fade-up" required></label>
+            <label for=""><input name="telefoon" type="text" placeholder="0612345678" data-aos="fade-up"></label>
+           <label for=""><textarea name="bericht" class="message" placeholder="Je bericht ..." id="" cols="30" rows="1" data-aos="fade-up" required></textarea></label>
+           <div class="status"></div>
+           <button type="submit" value="send" data-aos="fade-up">Verstuur →</button>
+       </form>
+       </div>
+   </main>
+   
+   <footer>
+       <nav>
+           <ul></ul>
+       </nav>
+   </footer>
+    
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset: 0,
+      duration: 1000,
+      once: true,
+  });
+</script>
+<script src="js/js.js"></script>
+</html>

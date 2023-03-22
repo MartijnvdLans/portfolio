@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./images/logo2.svg" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+   <header>
+      <a href="./index.html">
+          <img src="./images/logo2.svg" alt="Logo Martijn">
+      </a>
+       <ul>
+           <a href="./index.html"><li>Home</li></a>
+           <a href="./portfolio.html" class="active"><li>Portfolio</li></a>
+           <a href="./cv.html"><li>CV</li></a>
+           <a href="./contact.html"><li>Contact</li></a>
+       </ul>
+   </header>
+   
+   <main>
+       <section class="portfolio_items">
+           <h2>Mijn porfolio</h2>
+           <nav class="type_of_work" data-aos="fade-down">
+            <li class="button active">All</li>
+            <li class="button">Front-end</li>
+            <li class="button">UX</li>
+        </nav>
+        
+        <nav class="my_work" data-aos="fade-up">
+               <div class="frontEnd fade box">
+                    <a href="#popupCoolblue">
+                    <li>Coolblue nabouwen</li>
+                </a>
+                </div>
+                <div class="frontEnd fade box">
+                    <a href="#popupRoulette">
+                    <li>Roulette</li>
+                </a>
+                </div> 
+                <div class="ux fade box">
+                    <a href="#popup538">
+                    <li>538 Halloween</li>
+                </a>
+                </div>    
+                <div class="ux fade box">
+                    <a href="#popupHema">
+                    <li>HEMA Cupcakes</li>
+                </a>
+                </div>
+                <div class="frontEnd fade box">
+                    <a href="#popupIsga">
+                    <li>ISGA app</li>
+                </a>
+                </div>
+                <div class="" style="visibility: hidden;">
+                    <a href="">
+                    <li></li>
+                </a>
+                </div>
+        </nav>
+       </section>
+       
+       <div id="popupRoulette" class="overlay">
+           <div class="popup frontendWork">
+               <a class="close" href="#">&times;</a>
+               <div class="header">
+                   <h2>Roulette Tafel - <b>Frontend</b></h2>
+               </div>
+               <p>De roulette tafel is een project die ik heb gemaakt voor een les uit het eerste jaar 'Inleiding programmeren' waar ik voor het eerst Javascript gingen schrijven. De opracht was om een code te schrijven die minimaal een Array, een function(event) met een if/else statement en een eventListner moesten hebben.</p>
+               <p>Voor deze les had ik nog nooit Javascript geschreven, maar ik wou wel een uitdaging aan gaan, omdat ik al best was kennis over HTML en CSS had. Daarom koos ik er ook voor om een groter project aan te gaan, namelijk een Roulette tafel. Dit was erg buiten mijn comfortzone, maar erg leuk om mee te puzzelen!</p>
+               <a href="./roulette.html" target="_blank">Bekijk →</a>
+           </div>
+       </div>
+       <div id="popup538" class="overlay">
+           <div class="popup uxWork">
+               <a class="close" href="#">&times;</a>
+               <div class="header">
+                   <h2>538 Halloween - <b>UX</b></h2>
+               </div>
+               <p>De 538 Halloween App is een opdracht die ik heb gemaakt voor een vak uit her eerste jaar 'informatie architechtuur'. Voor dit vak moest ik een app ontwerpen in AdobeXD die aan de eisen van de gebruiker en de opdrachtgever moesten voldoen. Ook moest ik rekening houden met een aantal design principes die ik in deze weken heb geleert.</p>
+               <a href="./538.html">Bekijk →</a>
+           </div>
+       </div>
+    
+       <div id="popupHema" class="overlay">
+           <div class="popup uxWork">
+               <a class="close" href="#">&times;</a>
+               <div class="header">
+                   <h2>Hema Cupcakes - <b>UX</b></h2>
+               </div>
+               <p>Hema Cupcakes is een opdracht die ik heb moeten maken voor een vak uit het eerste jaar, 'Human Computer Interaction'. Voor deze lessen moesten ik design principles leren en toepassen op het eindontwerp. Op basis van de eisen die waren gesteld moest ik een ontwerp maken die aan deze design principles moest voldoen.</p>
+               <a href="./hema.html">Bekijk →</a>
+           </div>
+       </div>
+       <div id="popupIsga" class="overlay">
+           <div class="popup frontendWork">
+               <a class="close" href="#">&times;</a>
+               <div class="header">
+                   <h2>ISGA App - <b>Frontend</b></h2>
+               </div>
+               <p>ISGA App is een project dat ik in het eerste jaar heb moeten maken. Voor dit project moest ik een deel uit het ISGA(Internation Study Guide Amsterdam) boekje nemen en dit omzetten in een app voor de internationale studenten en omzetten. Deze prototype applicatie moest worden gemaakt voor een telefoon in HTML/CSS</p>
+               <p>Voor deze App heb ik gekozen om een Metro app te maken waarmee studenten een foto konden zien van de ingangen van deze metro.</p>
+               <a href="./isga.html">Bekijk →</a>
+           </div>
+       </div>
+       <div id="popupCoolblue" class="overlay">
+           <div class="popup frontendWork">
+               <a class="close" href="#">&times;</a>
+               <div class="header">
+                   <h2>Coolblue - <b>Frontend</b></h2>
+               </div>
+               <p>Voor dit project voor het vak 'Front-end voor beginners' moesten we 2 pagina's nabouwen met semantisch correcte code en minimaal 1 javascript animatie. Het ging bij dit project om Mobile first design.</p>
+               <a href="./coolblue.html">Bekijk →</a>
+           </div>
+       </div>
+   </main>
+   
+   <footer>
+       <nav>
+           <ul></ul>
+       </nav>
+   </footer>
+    
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+      offset: 0,
+      duration: 1000,
+      once: true,
+  });
+</script>
+<script src="js/js.js"></script>
+</html>

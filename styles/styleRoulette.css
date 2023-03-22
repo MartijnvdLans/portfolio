@@ -1,0 +1,446 @@
+html, * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #01431E;
+}
+
+
+img.roulette {
+    position: absolute;
+    width: 400px;
+    top:50vh;
+    margin-top: -200px;
+    margin-left: 150px
+}
+
+#ball {
+    position: absolute;
+    width: 400px;
+    top:50vh;
+    margin-top: -200px;
+    margin-left: 150px;
+    transform: rotate(-2deg);
+    visibility: hidden;
+    z-index: 1;
+}
+
+h1 {
+    text-align: right;
+    color: green;
+    padding-right: 10px;
+    text-shadow: 2px 2px 5px #000;
+    background: #000;
+    margin-bottom: 10px
+    
+}
+
+h2 {
+    color: #ba131a;
+    text-align: right;
+    opacity: 0;
+    position: fixed;
+    right: 10px;
+}
+
+form {
+    position: absolute;
+    bottom: 20px;
+    width: 98%;
+    z-index: 2;
+}
+
+.input {
+    display: block;
+    margin: 0 auto;
+    outline: 0;
+    border: 2px solid #016D29;
+    box-shadow: 3px 3px 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    width: 100px;
+    
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h3 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    font-size: 30px;
+    text-align: center;
+    color: green;
+}
+
+h4 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    font-size: 50px;
+    text-align: center;
+    background: #fff;
+    color: green;
+    z-index: 5;
+    top: 50vh;
+    margin-top:-50px;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    visibility: hidden;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #ba131a;
+    position: absolute;
+    bottom: 100px;
+    z-index: 3;
+    background: #000;
+}
+
+.zero {
+    width: 300px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    height: 35px;
+    background: #016D29;
+    font-size: 25px;
+    color: #fff;
+    border: 2px solid #F3C620;
+    cursor: pointer;
+}
+
+.leftbox {
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    margin-right: 200px;
+    height: 35px;
+    background: #01431E;
+    font-size: 25px;
+    color: #fff;
+    border: 2px solid #F3C620;
+    cursor: pointer;
+}
+
+div {
+    width: 505px;
+    display: block;
+    position: absolute;
+    margin-right: -2px;
+    right: 2vw;
+    height: 500px;
+    background: ;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.middlebox {
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    margin-right: 100px;
+    height: 35px;
+    background: #01431E;
+    font-size: 25px;
+    color: #fff;
+    border: 2px solid #F3C620;
+    cursor: pointer;
+}
+
+.rightbox {
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    height: 35px;
+    background: #01431E;
+    font-size: 25px;
+    color: #fff;
+    border: 2px solid #F3C620;
+    cursor: pointer;
+}
+
+#black {
+    height: 134px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    background: #01431e url('../images/black.svg');
+    background-size: 110px;
+    background-position: -7px;
+    background-repeat: no-repeat;
+    border: 2px solid #F3C620;
+    margin-right: -99px;
+    margin-top: 33px;
+    cursor: pointer;
+    font-size: 0;
+}
+
+#red {
+    height: 134px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    background: #01431e url('../images/red.svg');
+    background-size: 110px;
+    background-position: -7px;
+    background-repeat: no-repeat;
+    border: 2px solid #F3C620;
+    margin-right: 299px;
+    margin-top: 33px;  
+    cursor: pointer;
+    font-size: 0;
+}
+
+#pair {
+    height: 134px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    background: #01431e;    
+    border: 2px solid #F3C620;
+    margin-right: -99px;
+    margin-top: 165px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#impair {
+    height: 134px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    background: #01431e;
+    border: 2px solid #F3C620;
+    margin-right: 299px;
+    margin-top: 165px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#firsteightteen {
+    height: 134px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    background: #01431e;
+    border: 2px solid #F3C620;
+    margin-right: 299px;
+    margin-top: 297px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#lasteightteen {
+    height: 134px;
+    width: 100px;
+    display: block;
+    position: absolute;
+    right: 10vw;
+    background: #01431e;
+    border: 2px solid #F3C620;
+    margin-right: -99px;
+    margin-top: 297px;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#eeneuro {
+    padding:5px;
+    font-size:22px;
+    margin: 10px 0px;
+    color: green;
+    border-radius: 5px
+}
+
+#tweeeuro {
+    padding:5px;
+    font-size:22px;
+    margin: 10px 0px;
+    color: green;
+    border-radius: 5px
+}
+
+#drieeuro {
+    padding:5px;
+    font-size:22px;
+    margin: 10px 0px;
+    color: green;
+    border-radius: 5px
+}
+
+#money {
+    z-index: 3;
+    visibility: hidden;
+    top:0;
+    text-align: center;
+    background: #000;
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    height: 0;
+    padding: 50vh 0;
+    left: 0;
+    width: 100vw; 
+}
+
+.playerarea {
+    position: absolute;
+    visibility: visible;
+    margin: 0;
+    top:36px;
+    left: 0;
+    width: 100px;
+    height: 150px;
+}
+
+.playericon {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #000;
+    background: #fff;
+}
+
+.playername {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top:-5px;
+}
+
+.choose_player {
+    z-index: 3;
+    visibility: visible;
+    top:0;
+    margin: 0;
+    text-align: center;
+    background: #01431E;
+    position: absolute;
+    font-size: 30px;
+    height: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+}
+
+
+.choose_name {
+    z-index: 4;
+    visibility: visible;
+    top:0;
+    margin: 0;
+    text-align: center;
+    background: #01431E;
+    position: absolute;
+    font-size: 30px;
+    height: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+}
+
+.gekozen_naam {
+    margin-bottom:40vh;
+}
+
+.choose_player img {
+    height: 150px;
+    margin-top: 30vh;
+}
+
+@keyframes draai{
+  0%{
+    transform: rotate(-5000deg);
+    opacity: 1;
+   }
+ 100%{
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.draai{
+    animation: draai 10s ease-out;
+    display: block;
+}
+
+@keyframes draaibal{
+  0%{
+    transform: rotate(3000deg) scale(1.3);
+    opacity: 1;
+   }
+ 100%{
+    transform: rotate(-1deg) scale(1);
+    opacity: 1;
+  }
+}
+
+.draaibal{
+    animation: draaibal 10s ease-out;
+    display: block;
+}
+
+
+@keyframes subtract{
+  0%{
+    margin-top: -20px;
+    opacity: 0;
+   }
+    50% {
+        opacity: 1;
+    }
+ 100%{
+    margin-top: 0px;
+    opacity: 0;
+  }
+}
+
+.subtract{
+    animation: subtract 1.5s ease-in-out;
+}
+
+@keyframes winst{
+  0%{
+    margin-top: 0px;
+    opacity: 0;
+   }
+    50% {
+        opacity: 1;
+    }
+ 100%{
+    margin-top: -20px;
+    opacity: 0;
+  }
+}
+
+.winst{
+    animation: winst 1.5s ease-in-out;
+    color: green;
+}
